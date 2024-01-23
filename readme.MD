@@ -9,7 +9,6 @@ This project is still under heavy development.
 
 # Examples
 
-Logging in with a bot token and checking how many guilds the bot is in!
 ```js
 const { ValClient } = require("valclient")
 const client = new ValClient()
