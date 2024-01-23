@@ -5,6 +5,7 @@ const { IFriend } = require("../interfaces/IFriend")
 const { IFriendRequest } = require("../interfaces/IFriendRequest")
 const { IUserPresence } = require("../interfaces/IUserPresence")
 const { IUserSearch } = require("../interfaces/IUserSearch")
+const { ClientSocket } =  require("./websocket/Websocket")
 const https = require("https")
 const axios = require("axios").default
 
@@ -14,6 +15,8 @@ class ValClient {
         this.lockfile = Util.getLockfileData()
         this.shard = Util.getShard()
         this.tokens;
+        // this.websocket = new ClientSocket(this)
+        // this.websocket.init()
     }
     async checkTagAvailable(name, tag) {
         const endpoint = "/player-account/aliases/v1/validity"

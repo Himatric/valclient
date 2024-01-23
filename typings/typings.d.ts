@@ -224,7 +224,9 @@ interface IUserSearch {
      */
     addFriend(): Promise<void>;
   }
-  
+export class ClientSocket extends WebSocket {
+    
+}
 export class ValClient {
     /**
      * @description returns all friends on your friend list
@@ -294,6 +296,8 @@ export class ValClient {
      * ```
      */
     public async joinMatchmaking():EnterMatchmakingQueueResponse
+    public region:string
+    public websocket:ClientSocket
 }
 declare module "valclient" {
     module.exports = {

@@ -1,6 +1,6 @@
 {
   "name": "@himatric/valclient",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Valorant Client api wrapper written in nodejs. Includes automatic region detection",
   "main": "index.js",
   "typings": "./typings/typings.d.ts",
