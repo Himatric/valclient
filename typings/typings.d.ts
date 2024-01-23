@@ -45,7 +45,7 @@ interface IFriendRequest {
 export class ValClient {
     public async getFriends():IFriend[]
     public async addFriend(name:string, tag:string):IFriendRequest[]
-    public async getFriendRequests()
+    public async getFriendRequests():IFriendRequest[]
 }
 declare module "valclient" {
     module.exports = {
