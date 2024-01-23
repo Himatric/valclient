@@ -1,5 +1,5 @@
 {
-  "name": "valclient",
+  "name": "@himatric/valclient",
   "version": "1.0.0",
   "description": "Valorant Client api wrapper written in nodejs. Includes automatic region detection",
   "main": "index.js",
@@ -19,5 +19,14 @@
   "dependencies": {
     "axios": "^1.6.5",
     "ws": "^8.16.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Himatric/valclient.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Himatric/valclient/issues"
+  },
+  "homepage": "https://github.com/Himatric/valclient#readme"
 }
