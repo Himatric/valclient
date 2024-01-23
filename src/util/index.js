@@ -28,6 +28,13 @@ class Util {
         })
         return region
     }
+    static getShard() {
+        const path = local + "\\VALORANT\\Saved\\Logs\\ShooterGame.log"
+        const data = fs.readFileSync(path, "utf-8")
+        const matches = data.match(/https:\/\/glz-(.+?)-1.(.+?).a.pvp.net/)
+        const shard = matches[1]
+        return shard
+    }
 }
 
 module.exports = {
